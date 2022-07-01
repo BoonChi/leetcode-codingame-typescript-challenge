@@ -1,0 +1,52 @@
+{
+  "name": "codingame-typescript-challenge",
+  "version": "1.0.0",
+  "description": "solve puzzles using typescript and cover 100% coverage of unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint --ext .ts . --fix",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+  },
+  "pre-commit": [
+    "test",
+    "lint",
+    "format"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoonChi/codingame-typescript-challenge.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "unit",
+    "testing",
+    "node",
+    "jest",
+    "coverage",
+    "puzzles",
+    "codingame",
+    "challenge"
+  ],
+  "author": "Boon Chi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoonChi/codingame-typescript-challenge/issues"
+  },
+  "homepage": "https://github.com/BoonChi/codingame-typescript-challenge#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@types/node": "^17.0.41",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.4",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
